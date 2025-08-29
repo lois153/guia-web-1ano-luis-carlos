@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boas Práticas</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">WebEdu</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tecnologias.html">Tecnologias</a></li>
+        <li><a href="boas-praticas.html" class="active">Boas Práticas</a></li>
+        <li><a href="fluxo.html">Fluxo</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Boas Práticas Profissionais</h1>
+    <p>Seguir boas práticas torna o código mais acessível, fácil de manter e preparado para crescer. Veja os principais pontos:</p>
+
+    <section class="practice">
+      <h2>Acessibilidade</h2>
+      <p>Permitir que qualquer pessoa, incluindo pessoas com deficiência, use o site. Inclui uso de texto alternativo em imagens, contraste adequado de cores e navegação por teclado.</p>
+      <pre><code>&lt;img src="logo.png" alt="Logotipo da empresa"&gt;</code></pre>
+    </section>
+
+    <section class="practice">
+      <h2>Semântica</h2>
+      <p>Usar as tags HTML corretas para dar significado ao conteúdo, como &lt;header&gt;, &lt;main&gt;, &lt;article&gt;, &lt;footer&gt;. Isso ajuda tanto usuários quanto mecanismos de busca.</p>
+      <pre><code>&lt;article&gt;
+  &lt;h2&gt;Notícia&lt;/h2&gt;
+  &lt;p&gt;Conteúdo da notícia...&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+    </section>
+
+    <section class="practice">
+      <h2>Responsividade</h2>
+      <p>Adaptar o site para diferentes tamanhos de tela (computador, tablet e celular) usando media queries e layouts flexíveis.</p>
+      <pre><code>@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}</code></pre>
+    </section>
+
+    <section class="practice">
+      <h2>Organização</h2>
+      <p>Manter arquivos bem estruturados em pastas (HTML, CSS, JS, imagens) e escrever código limpo, com indentação e comentários.</p>
+      <pre><code>/assets
+/css
+/js
+index.html</code></pre>
+    </section>
+
+    <section class="practice">
+      <h2>Versionamento</h2>
+      <p>Usar sistemas como <strong>Git</strong> para controlar versões do código. Isso facilita colaboração, histórico e recuperação de alterações.</p>
+      <pre><code>git init
+git add .
+git commit -m "Primeiro commit"</code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WebEdu - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>

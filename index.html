@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Profissional de Desenvolvimento Web</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="logo.svg" alt="Logo guia web">
+        Guia Web
+      </a>
+      <button class="menu-toggle" aria-controls="menu" aria-expanded="false">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tecnologias.html">Tecnologias</a></li>
+        <li><a href="boas-praticas.html">Boas Práticas</a></li>
+        <li><a href="fluxo.html">Fluxo</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+<main>
+  <section class="hero">
+    <h1>Guia Profissional de Desenvolvimento Web</h1>
+    <p>Um resumo do que você precisa saber para começar na área.</p>
+  </section>
+
+  <section class="cards">
+    <!-- Card HTML -->
+    <article class="card">
+      <h2>HTML</h2>
+      <p>É a estrutura de uma página web. Define títulos, parágrafos, links, imagens e a organização do conteúdo.</p>
+      <pre><code>&lt;h1&gt;Olá Mundo&lt;/h1&gt;
+&lt;p&gt;Este é meu primeiro site&lt;/p&gt;</code></pre>
+    </article>
+
+    <!-- Card CSS -->
+    <article class="card">
+      <h2>CSS</h2>
+      <p>É o estilo da página. Define cores, fontes, espaçamentos e como os elementos aparecem na tela.</p>
+      <pre><code>h1 {
+  color: #2563EB;
+  font-family: Arial, sans-serif;
+}</code></pre>
+    </article>
+
+    <!-- Card JavaScript -->
+    <article class="card">
+      <h2>JavaScript</h2>
+      <p>É a parte interativa da web. Controla eventos, animações e lógica da aplicação no navegador.</p>
+      <pre><code>document.querySelector("h1")
+  .addEventListener("click", () =&gt; {
+    alert("Você clicou no título!");
+});</code></pre>
+    </article>
+  </section>
+</main>
